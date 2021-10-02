@@ -46,11 +46,10 @@ jobs:
       run: npm ci
 
     - name: Build
-      env:
-        run: npm run predeploy-build
+      run: npm run predeploy-build
 
     - name: Deploy to github pages
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: npm run deploy
+      run: npm run deploy
 
