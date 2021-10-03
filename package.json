@@ -8,7 +8,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "predeploy-build": "ng build --prod --base-href 'https://nastyamandrychenko.github.io/fairy-tales/'",
-    "deploy": "npx angular-cli-ghpages --dir=dist/client"
+    "deploy": "npx angular-cli-ghpages --dir=dist/fairy-tales"
   },
   "private": true,
   "dependencies": {
