@@ -52,9 +52,7 @@ jobs:
     - name: Build
       run: npm run predeploy-build
 
-    - name: Auth to repo
-      run: angular-cli-ghpages --repo=https://${{ secrets.ACCESS_TOKEN }}@github.com/nastyamandrychenko/fairy-tales.git --name="nastyamandrychenko" --email=nastyamarichenko@gmail.com
-
     - name: Deploy to github pages
-      run: npm run deploy
+      run: ng deploy --repo=https://${{ secrets.ACCESS_TOKEN }}@github.com/nastyamandrychenko/fairy-tales.git --name="nastyamandrychenko" --email=nastyamarichenko@gmail.com
+
 
