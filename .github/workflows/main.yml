@@ -41,6 +41,9 @@ jobs:
           ${{ runner.os }}-build-
           ${{ runner.os }}-
 
+    - name: Check files list
+      run: ls
+
     # Install required dependencies to build app
     - name: Install dependencies
       run: npm install
