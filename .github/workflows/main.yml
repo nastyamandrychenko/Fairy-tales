@@ -55,5 +55,5 @@ jobs:
     - name: Deploy to github pages
       env:
         GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-      run: npm run deploy
+      run: --repo=https://${{ secrets.ACCESS_TOKEN }}@github.com/nastyamandrychenko/fairy-tales.git --name="nastyamandrychenko" --email=nastyamarichenko@gmail.com
 
