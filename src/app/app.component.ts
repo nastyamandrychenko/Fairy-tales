@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { EMAIL_ERROR } from './constants/texts';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'Nastya 2';
+  title = EMAIL_ERROR;
 }
