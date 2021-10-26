@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule } from '@angular/platform-browser'; 
+import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { MenuComponent } from './routers/menu/menu.component';
@@ -9,6 +11,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { SignupComponent } from './routers/signup/signup.component';
 import { SigninComponent } from './routers/signin/signin.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MaterialAppModule } from './ngmaterial.module';
 
 const routes: Routes = [
   {path: 'signUp', component: SignupComponent},
@@ -24,12 +27,16 @@ const routes: Routes = [
     TalesComponent,
     HomeComponent,
     SigninComponent,
-    SigninComponent
+    SignupComponent
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(routes),
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MaterialAppModule,
+    FormsModule,
+    ReactiveFormsModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

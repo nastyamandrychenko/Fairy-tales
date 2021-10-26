@@ -1,1 +1,44 @@
-<p>signup works!</p>
+<body>
+
+<div class="container">
+
+<div class="block_with_img">
+<h2>З Поверненням</h2>
+<h5>Щоб залишатися з нами на зв’язку, будь ласка, увійдіть зі своїми особистими данними</h5>
+<button class="button_signIn" mat-raised-button color="primary">Увійти</button>
+</div>
+
+<div class="signUp">
+<h2>Створити акаунт</h2>
+<a href="#"><img style="width: 20px;" src="/assets/img/facebook_icon.png" alt="facebook"></a>
+<a href="#"><img style="width: 20px;" src="/assets/img/google_icon.png" alt="google"></a>
+<a href="#"><img style="width: 20px;" src="/assets/img/linkedin_icon.png" alt="linkedin"></a>
+
+<form  class = "example-form" > 
+
+    <!-- name -->
+  <mat-form-field  style="width: 250px; display: block;"  class = "example-full-width"  appearance = "fill" > 
+    <mat-label > Ім'я </mat-label > 
+    <input matInput > 
+  </mat-form-field>
+
+  <!-- email -->
+  <!-- <mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>Email</mat-label>
+    <input type="email" matInput  
+           placeholder="Ex. pat@example.com">
+    <mat-hint>Errors appear instantly!</mat-hint>
+    <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+      Please enter a valid email address
+    </mat-error>
+    <mat-error *ngIf="emailFormControl.hasError('required')">
+      Email is <strong>required</strong>
+    </mat-error>
+  </mat-form-field>
+   -->
+  </form>
+</div>
+
+</div>
+
+</body>
