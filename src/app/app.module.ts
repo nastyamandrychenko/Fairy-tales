@@ -12,6 +12,7 @@ import { SignupComponent } from './routers/signup/signup.component';
 import { SigninComponent } from './routers/signin/signin.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialAppModule } from './ngmaterial.module';
+import { ComponentsModule } from './components/components.module';
 
 const routes: Routes = [
   {path: 'signUp', component: SignupComponent},
@@ -35,8 +36,8 @@ const routes: Routes = [
     BrowserAnimationsModule,
     MaterialAppModule,
     FormsModule,
-    ReactiveFormsModule
-
+    ReactiveFormsModule,
+    ComponentsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
