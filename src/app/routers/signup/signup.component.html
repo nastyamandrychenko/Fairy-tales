@@ -14,17 +14,19 @@
 <a href="#"><img style="width: 20px;" src="/assets/img/google_icon.png" alt="google"></a>
 <a href="#"><img style="width: 20px;" src="/assets/img/linkedin_icon.png" alt="linkedin"></a>
 
-<form  class = "example-form" > 
+<form > 
 
     <!-- name -->
-<app-input label="Name"></app-input>
-<app-input label="Email"></app-input>
+<app-input label="Name" [control]="userName" [errorMessage]="userName.hasError('required') ? 'UserName is required' : ''"></app-input>
 
-  <!-- email -->
-  <!-- <mat-form-field  style="width: 250px; display: block;"  class = "example-full-width"  appearance = "fill" > 
-    <mat-label > Емейл </mat-label > 
-    <input matInput required formControlName="email"> 
-  </mat-form-field> -->
+ <!-- email -->
+<app-input label="Email" [control]="email" [errorMessage]="email.hasError('email') && !email.hasError('required') ? 'Please enter a valid email address' : 'Email is required'"></app-input>
+
+<!-- password -->
+<app-input label="Password" [control]="password" [errorMessage]="password.hasError('required') ? 'Password is required' : 'Min length of password is 8'"></app-input>
+
+ 
+  
   </form>
 </div>
 
